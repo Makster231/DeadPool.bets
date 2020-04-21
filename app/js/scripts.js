@@ -1,6 +1,30 @@
 "use strict";
 
-//   jQuery.validator.addMethod('phone_mask', function (value, element) {
+(function ($, window, document) {
+  function tooltipInit() {
+    if ($(window).width() < 640) {
+      $(".js_services-tooltip").tooltipster({
+        animation: "grow"
+      });
+    } else {
+      $(".js_services-tooltip").tooltipster({
+        animation: "grow",
+        position: "left",
+        side: "top"
+      });
+    }
+
+    $(".js_aside-tooltip").tooltipster({
+      position: "bottom",
+      animation: "grow"
+    });
+  }
+
+  $(function () {
+    // Active tooltipster
+    tooltipInit();
+  });
+})(window.jQuery, window, document); //   jQuery.validator.addMethod('phone_mask', function (value, element) {
 //     return this.optional(element) || value.length === parseInt($(element).attr('data-minlength'));
 //   }, 'Please provide a valid phone');
 //   jQuery.validator.addMethod('emailCustom', function (value, element) {
@@ -172,6 +196,8 @@
 //     enterForm();
 //   });
 // })(window.jQuery, window, document);
+
+
 var $reviewSlider_counter = 0,
     $reviewSlider = $(".js_reviews-slider");
 
@@ -740,7 +766,7 @@ function reviewsSlider() {
 
 (function ($, window, document) {
   $(function () {
-    $("head").prepend('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />', '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />', '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />');
+    $("head").prepend('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />', '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />', '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" />', '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />');
   });
 })(window.jQuery, window, document);
 
