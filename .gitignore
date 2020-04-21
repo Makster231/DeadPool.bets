@@ -1,0 +1,10 @@
+.idea
+/.idea
+**/.idea
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+*.sqlite-journal
+/.vs
+node_modules/*
+/node_modules
+**/node_modules
