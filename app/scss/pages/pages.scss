@@ -1,0 +1,62 @@
+.services,
+.reviews,
+.blog,
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 5;
+
+    @media (max-width: 960px) {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 22px;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    max-width: 74%;
+
+    @media (max-width: 960px) {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .aside-content {
+    border-radius: 6px;
+  }
+}

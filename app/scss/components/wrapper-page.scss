@@ -1,0 +1,17 @@
+﻿.wrapper-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 960px) {
+    overflow: hidden;
+  }
+  > * {
+    width: 100%;
+  }
+
+  .js_blog-page,
+  .main-page {
+    flex: 1 0 auto;
+  }
+}

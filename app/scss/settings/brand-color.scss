@@ -1,0 +1,37 @@
+﻿$brand-black: #171717;
+$brand-white: #f1f1f1;
+$brand-default: #e1e1e1;
+$brand-success: #00ab46;
+$brand-danger: #8b2323;
+$brand-danger-lighten: lighten(#8b2323, 10%);
+$brand-danger-darken: #8b1a1a;
+$brand-warning: #fc7405;
+$brand-primary: blue;
+
+.text-danger {
+  color: $brand-danger;
+}
+
+.text-danger-lighten {
+  color: $brand-danger-lighten !important;
+}
+
+.text-danger-darken {
+  color: $brand-danger-darken;
+}
+
+.text-success {
+  color: $brand-success;
+}
+
+.text-warning {
+  color: $brand-warning;
+}
+
+.text-white {
+  color: $brand-white;
+}
+
+.text-black {
+  color: $brand-black;
+}

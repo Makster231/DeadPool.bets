@@ -1,0 +1,75 @@
+<section
+  id="modal-registration"
+  class="cabinet-registration cabinet-form"
+  style="display: none;"
+>
+  <h1>
+    Регистрация
+  </h1>
+
+  <form>
+    <div class="form-control">
+      <label for="registration_name">Ваше Имя</label>
+      <input
+        id="registration_name"
+        type="text"
+        name="registration_name"
+        placeholder="Введите Логин"
+      />
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="form-control">
+      <label for="registration_login">Ваш E-mail</label>
+      <input
+        id="registration_login"
+        type="email"
+        name="registration_login"
+        placeholder="Введите E-mail"
+      />
+      <i class="fas fa-at"></i>
+    </div>
+    <div class="form-control">
+      <label for="registration_password">Введите Пароль</label>
+      <input
+        id="registration_password"
+        type="password"
+        name="registration_password"
+        autocomplete="on"
+        placeholder="Введите Пароль"
+      />
+      <i class="fas fa-lock"></i>
+    </div>
+    <div class="form-control">
+      <label for="registration_password_repeat">Повторите Пароль</label>
+      <input
+        id="registration_password_repeat"
+        type="password"
+        name="registration_password-repeat"
+        placeholder="Повторите Пароль"
+        autocomplete="on"
+      />
+      <i class="fas fa-lock"></i>
+    </div>
+
+    <div class="form-control">
+      <label for="registration_code">Промо Код</label>
+      <input
+        id="registration_code"
+        type="text"
+        name="registration_code"
+        placeholder="Промо Код"
+        minlength="6"
+        maxlength="6"
+      />
+      <i class="fas fa-user-tag"></i>
+    </div>
+
+    <button type="submit" class="btn js_registration-btn">
+      Зарегистрироваться
+    </button>
+
+    <p>
+     зарегистрировавшись, вы соглашаетесь с <a href="#" class="text-danger-lighten"  data-fancybox data-src="#modal-deal" data-touch="false">условиями пользовательского соглашения</a>
+      </p>
+  </form>
+</section>
