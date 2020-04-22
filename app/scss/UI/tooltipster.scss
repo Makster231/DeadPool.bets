@@ -1,0 +1,21 @@
+.tooltipster {
+  &-default {
+    border-color: $brand-danger;
+    border-width: 1px;
+    background-color: $brand-black;
+    font-size: 12px;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.5);
+
+    & .tooltipster-content {
+      font-family: "Roboto", sans-serif !important;
+      font-size: 13px;
+
+      @media (max-width: 640px) {
+        font-size: 12px;
+      }
+    }
+  }
+  &-arrow-border {
+    border-color: rgba(139, 35, 35, 1) !important;
+  }
+}

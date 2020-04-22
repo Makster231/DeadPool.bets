@@ -65,6 +65,7 @@ const path = {
 };
 
 const js_plugins = [
+	path.app.jsComponents + 'tooltip.js',
 	path.app.jsComponents + 'form-validate.js',
 	path.app.jsComponents + 'form-registration.js',
 	path.app.jsComponents + 'form-enter.js',
