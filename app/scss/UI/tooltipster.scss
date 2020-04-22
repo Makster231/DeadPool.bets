@@ -1,10 +1,10 @@
 .tooltipster {
   &-default {
-    border-color: $brand-danger;
+    border-color: $brand-danger !important;
     border-width: 1px;
-    background-color: $brand-black;
+    background-color: $brand-black !important;
     font-size: 12px;
-    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.5) !important;
 
     & .tooltipster-content {
       font-family: "Roboto", sans-serif !important;

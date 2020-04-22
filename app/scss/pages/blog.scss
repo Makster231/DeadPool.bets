@@ -45,8 +45,6 @@
       box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
       position: relative;
 
-      
-
       @media (max-width: 640px) {
         padding: 15px 15px 40px;
       }
@@ -83,6 +81,11 @@
         position: absolute;
         left: calc(50% - 85px);
         bottom: calc(0px - 25px);
+
+        span {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
 
         @media (max-width: 1168px) {
           height: 40px;

@@ -5,12 +5,12 @@
   text-align: center;
   border: 0;
   outline: 0;
-  border-radius: 4px;
+  padding: 0;
+  border-radius: 3px;
   box-shadow: inset 0 0 1px 1px rgba($brand-danger, 0.75);
   background-color: $brand-black;
   width: 100%;
   display: block;
-  color: $brand-white !important;
   transition: 0.5s ease;
   overflow: hidden;
 
@@ -18,15 +18,15 @@
     position: relative;
     display: block;
     padding-top: 15px;
+    color: $brand-white !important;
     padding-bottom: 15px;
     &::after {
       content: "";
       position: absolute;
       left: 0;
-      top: 100%;
+      top: 101%;
       width: 100%;
       height: 1px;
-      border-radius: 4px;
       transition: 0.5s ease;
       background-color: lighten($brand-danger, 10%);
     }
@@ -35,10 +35,9 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 100%;
+      bottom: 101%;
       width: 100%;
       height: 1px;
-      border-radius: 4px;
       transition: 0.4s ease;
       background-color: lighten($brand-danger, 10%);
     }
@@ -47,11 +46,10 @@
   &::after {
     content: "";
     position: absolute;
-    left: -100%;
+    left: 100%;
     top: 0;
-    width: 100%;
-    height: 1px;
-    border-radius: 4px;
+    width: 1px;
+    height: 100%;
     transition: 0.4s ease;
     background-color: lighten($brand-danger, 10%);
   }
@@ -59,11 +57,10 @@
   &::before {
     content: "";
     position: absolute;
-    right: -100%;
+    right: 100%;
     bottom: 0;
-    width: 100%;
-    height: 1px;
-    border-radius: 4px;
+    width: 1px;
+    height: 100%;
     transition: 0.4s ease;
     background-color: lighten($brand-danger, 10%);
   }
@@ -77,10 +74,10 @@
     }
     span {
       &::after {
-        top: 0;
+        top: 1%;
       }
       &::before {
-        bottom: 0;
+        bottom: 1%;
       }
     }
     // box-shadow: inset 0 0 3px 3px rgba($brand-danger, 1);
