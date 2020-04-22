@@ -455,6 +455,8 @@ a:hover { color: none; text-decoration: none; }
 
 .blog-page-content { max-width: 74%; width: 100%; }
 
+@media (max-width: 960px) { .blog-page-content { max-width: 100%; margin-bottom: 30px; } }
+
 .blog-page-content h1 { display: block; width: 100%; text-align: center; margin-bottom: 40px; font-size: 36px; font-weight: 900; text-transform: capitalize; position: relative; z-index: 5; }
 
 @media (max-width: 960px) { .blog-page-content h1 { font-size: 32px; margin-bottom: 30px; } }
@@ -475,25 +477,25 @@ a:hover { color: none; text-decoration: none; }
 
 .blog-page-content img { max-height: 400px; }
 
-.services, .reviews, .blog, .about { display: flex; flex-direction: row; justify-content: space-between; padding-top: 60px; padding-bottom: 60px; }
+.services, .reviews, .blog-page-wrapper, .blog, .about { display: flex; flex-direction: row; justify-content: space-between; padding-top: 60px; padding-bottom: 60px; }
 
-@media (max-width: 960px) { .services, .reviews, .blog, .about { flex-direction: column; justify-content: center; padding-top: 40px; padding-bottom: 40px; } }
+@media (max-width: 960px) { .services, .reviews, .blog-page-wrapper, .blog, .about { flex-direction: column; justify-content: center; padding-top: 40px; padding-bottom: 40px; } }
 
-@media (max-width: 640px) { .services, .reviews, .blog, .about { padding-top: 30px; padding-bottom: 30px; } }
+@media (max-width: 640px) { .services, .reviews, .blog-page-wrapper, .blog, .about { padding-top: 30px; padding-bottom: 30px; } }
 
-.services h1, .reviews h1, .blog h1, .about h1 { display: block; width: 100%; text-align: center; margin-bottom: 40px; font-size: 36px; font-weight: 900; text-transform: capitalize; position: relative; z-index: 5; }
+.services h1, .reviews h1, .blog-page-wrapper h1, .blog h1, .about h1 { display: block; width: 100%; text-align: center; margin-bottom: 40px; font-size: 36px; font-weight: 900; text-transform: capitalize; position: relative; z-index: 5; }
 
-@media (max-width: 960px) { .services h1, .reviews h1, .blog h1, .about h1 { font-size: 32px; margin-bottom: 30px; } }
+@media (max-width: 960px) { .services h1, .reviews h1, .blog-page-wrapper h1, .blog h1, .about h1 { font-size: 32px; margin-bottom: 30px; } }
 
-@media (max-width: 640px) { .services h1, .reviews h1, .blog h1, .about h1 { font-size: 26px; margin-bottom: 20px; } }
+@media (max-width: 640px) { .services h1, .reviews h1, .blog-page-wrapper h1, .blog h1, .about h1 { font-size: 26px; margin-bottom: 20px; } }
 
-@media (max-width: 374px) { .services h1, .reviews h1, .blog h1, .about h1 { font-size: 22px; } }
+@media (max-width: 374px) { .services h1, .reviews h1, .blog-page-wrapper h1, .blog h1, .about h1 { font-size: 22px; } }
 
-.services-content, .reviews-content, .blog-content, .about-content { width: 100%; max-width: 74%; }
+.services-content, .reviews-content, .blog-page-wrapper-content, .blog-content, .about-content { width: 100%; max-width: 74%; }
 
-@media (max-width: 960px) { .services-content, .reviews-content, .blog-content, .about-content { max-width: 100%; margin-bottom: 30px; } }
+@media (max-width: 960px) { .services-content, .reviews-content, .blog-page-wrapper-content, .blog-content, .about-content { max-width: 100%; margin-bottom: 30px; } }
 
-.services .aside-content, .reviews .aside-content, .blog .aside-content, .about .aside-content { border-radius: 6px; }
+.services .aside-content, .reviews .aside-content, .blog-page-wrapper .aside-content, .blog .aside-content, .about .aside-content { border-radius: 6px; }
 
 .reviews-content { display: flex; flex-direction: column; }
 
