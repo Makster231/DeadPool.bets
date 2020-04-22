@@ -120,7 +120,7 @@
   function navUtmParams() {
     $(pages_page).addClass("js_hidden");
     nav_items.removeClass("js_active");
-    if (location.search === "") {
+    if (location.search === "" || location.search.length > 20) {
       $(pages_main).removeClass("js_hidden");
       $(`.${nav_main}`).addClass("js_active");
       return;
