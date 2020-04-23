@@ -1,47 +1,48 @@
 .cabinet-form {
-  padding: 40px 30px 20px;
-  width: 400px;
   background-color: $brand-black;
   border-radius: 6px;
   box-shadow: 0 0 6px 3px rgba(139, 35, 35, 0.35);
+  width: 100%;
+  padding: 30px 15px 15px;
 
-  @media (max-width: 640px) {
-    width: 100%;
-    padding: 30px 15px 15px;
+  @media (min-width: 640px) {
+    padding: 40px 30px 20px;
+    width: 400px;
   }
 
   h1 {
-    font-size: 32px;
     display: block;
-    margin-bottom: 20px;
     text-align: center;
     color: $brand-white;
     font-weight: bold;
 
-    @media (max-width: 640px) {
-      font-size: 26px;
-      margin-bottom: 15px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    @media (min-width: 640px) {
+      font-size: 32px;
+      margin-bottom: 20px;
     }
   }
 
   .form-control {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+
+    @media (min-width: 640px) {
+      margin-bottom: 25px;
+    }
 
     i {
       position: absolute;
-      top: 15px;
       left: 10px;
-      font-size: 20px;
+      font-size: 18px;
+      top: 12px;
       color: $brand-black;
       transition: 0.4s ease;
-      @media (max-width: 640px) {
-        font-size: 18px;
-        top: 12px;
+      @media (min-width: 640px) {
+        top: 15px;
+        font-size: 20px;
       }
-    }
-    @media (max-width: 640px) {
-      margin-bottom: 20px;
     }
   }
 
@@ -50,10 +51,10 @@
     margin-bottom: 6px;
     font-weight: 600;
     color: $brand-white;
-    font-size: 18px;
+    font-size: 16px;
 
-    @media (max-width: 640px) {
-      font-size: 16px;
+    @media (min-width: 640px) {
+      font-size: 18px;
     }
   }
 
@@ -61,13 +62,13 @@
     width: 100%;
     outline: 0;
     border: 0;
-    font-size: 18px;
     border-radius: 6px;
-    padding: 15px 15px 15px 40px;
+    padding: 12px 12px 12px 40px;
+    font-size: 16px;
 
-    @media (max-width: 640px) {
-      font-size: 16px;
-      padding: 12px 12px 12px 40px;
+    @media (min-width: 640px) {
+      padding: 15px 15px 15px 40px;
+      font-size: 18px;
     }
 
     &:focus,
@@ -86,14 +87,14 @@
   }
 
   p {
-    font-size: 14px;
+    font-size: 12px;
     color: $brand-white;
     text-align: center;
     display: block;
     width: 100%;
 
-    @media (max-width: 640px) {
-      font-size: 12px;
+    @media (min-width: 640px) {
+      font-size: 14px;
     }
   }
 
@@ -103,6 +104,7 @@
     display: block;
     width: 100%;
     transition: 0.4s ease;
+    font-size: 12px;
 
     &:hover {
       text-decoration: underline;
@@ -113,8 +115,8 @@
       color: rgba($brand-danger, 1);
     }
 
-    @media (max-width: 640px) {
-      font-size: 12px;
+    @media (min-width: 640px) {
+      font-size: 14px;
     }
   }
 }

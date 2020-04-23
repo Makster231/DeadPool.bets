@@ -1,15 +1,16 @@
 .aside {
   width: 100%;
-  max-width: 24%;
+  max-width: 100%;
 
-  @media (max-width: 960px) {
-    max-width: 100%;
+  @media (min-width: 960px) {
+    max-width: 24%;
   }
 
   img {
-    width: 100px;
-    @media (max-width: 640px) {
-      width: 80px;
+    width: 80px;
+
+    @media (min-width: 640px) {
+      width: 100px;
     }
   }
 
@@ -35,11 +36,14 @@
     border-radius: 2px;
     overflow: hidden;
 
-    @media (max-width: 960px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (min-width: 960px) {
+      flex-direction: column;
+      flex-wrap: unset;
     }
   }
 
@@ -54,27 +58,29 @@
   &-block {
     background: $brand-black;
     margin-bottom: 20px;
+    width: 100%;
+    border-radius: 6px;
+    max-width: 100%;
+    overflow: hidden;
 
     &:last-of-type {
       margin-bottom: 0;
     }
-    @media (max-width: 960px) {
-      width: 100%;
-      border-radius: 6px;
-      overflow: hidden;
-      max-width: calc(50% - 10px);
-      margin-bottom: 0;
 
-      &:nth-of-type(even) {
-        margin-left: auto;
-      }
-
-      &:nth-of-type(odd) {
-        margin-right: auto;
-      }
+    &:nth-of-type(even) {
+      margin-left: auto;
     }
 
-    @media (max-width: 640px) {
+    &:nth-of-type(odd) {
+      margin-right: auto;
+    }
+
+    @media (min-width: 640px) {
+      max-width: calc(50% - 10px);
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 960px) {
       max-width: 100%;
       margin-bottom: 20px;
     }

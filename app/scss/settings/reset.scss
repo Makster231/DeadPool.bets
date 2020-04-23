@@ -334,6 +334,10 @@ html input[disabled] {
   cursor: default;
 }
 
+input[type="password"]::-ms-reveal {
+  color: #8b1a1a !important;
+}
+
 /**
  * 1. Address box sizing set to content-box in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
@@ -440,45 +444,50 @@ textarea {
   padding: 0.2em 0;
 }
 
-
 input::-webkit-input-placeholder {
-  overflow: visible
+  overflow: visible;
 }
 
 input::-moz-placeholder {
-  overflow: visible
+  overflow: visible;
 }
 
 input:-ms-input-placeholder {
-  overflow: visible
+  overflow: visible;
 }
 
 input::-ms-input-placeholder {
-  overflow: visible
+  overflow: visible;
 }
 
 input:-moz-placeholder {
-  overflow: visible
+  overflow: visible;
 }
 
 input::placeholder {
-  overflow: visible
+  overflow: visible;
 }
 
-input[type=submit], input[type=text], input[type=email], input[type=tel], textarea {
-  -webkit-appearance: none !important
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none !important;
 }
 
-input[type=number] {
-  -moz-appearance: textfield !important
+input[type="number"] {
+  -moz-appearance: textfield !important;
 }
 
-input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
-  -webkit-appearance: none !important
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
 }
 
-a, label {
-  -webkit-tap-highlight-color: transparent !important
+a,
+label {
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 a:hover {

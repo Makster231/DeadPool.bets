@@ -2,25 +2,26 @@
   &-content {
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
-    @media (max-width: 960px) {
-      flex-direction: column;
-      justify-content: center;
-      padding-top: 40px;
-      padding-bottom: 40px;
+    @media (min-width: 960px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
   }
   &-forecasts {
     width: 100%;
-    max-width: 74%;
+    max-width: 100%;
+    margin-bottom: 40px;
 
-    @media (max-width: 960px) {
-      max-width: 100%;
-      margin-bottom: 40px;
+    @media (min-width: 960px) {
+      max-width: 74%;
+      margin-bottom: 0;
     }
 
     .forecasts-nav {
@@ -56,12 +57,10 @@
             position: absolute;
             left: -35px;
             top: -10px;
-            // background: url(../../images/icon-dota.png) center no-repeat;
             background: url("../../images/css_sprites.png") -10px -150px;
             width: 37px;
             height: 37px;
             transform: scale(0.5);
-            // background-size: contain !important;
           }
         }
 
@@ -132,20 +131,19 @@
       display: block;
       margin-bottom: 30px;
       margin-top: 10px;
-      font-size: 26px;
       border-top: 1px solid $brand-default;
       border-bottom: 1px solid $brand-default;
       text-align: center;
       padding-bottom: 5px;
       padding-top: 5px;
       font-weight: 600;
+      font-size: 18px;
 
-      @media (max-width: 960px) {
+      @media (min-width: 374px) {
         font-size: 20px;
       }
-
-      @media (max-width: 374px) {
-        font-size: 18px;
+      @media (min-width: 960px) {
+        font-size: 26px;
       }
     }
 
@@ -159,7 +157,6 @@
       .forecasts-empty-future,
       .forecasts-empty-now {
         display: none;
-        font-size: 22px;
         font-weight: 900;
         margin-bottom: 30px;
         text-align: center;
@@ -167,13 +164,13 @@
         text-decoration: underline;
         color: lighten($brand-danger, 20%);
         width: 100%;
+        font-size: 16px;
 
-        @media (max-width: 960px) {
+        @media (min-width: 374px) {
           font-size: 18px;
         }
-
-        @media (max-width: 374px) {
-          font-size: 16px;
+        @media (min-width: 960px) {
+          font-size: 22px;
         }
       }
 
@@ -207,28 +204,29 @@
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-        padding: 30px 15px;
-        max-width: calc(50% - 30px);
         margin-bottom: 20px;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
         border-radius: 5px;
-
-        &:nth-of-type(even) {
-          margin-right: 20px;
-        }
-
+        max-width: calc(100% - 20px);
+        padding: 20px 10px;
+        &:nth-of-type(even),
         &:nth-of-type(odd) {
-          margin-left: 20px;
+          margin-right: auto;
+          margin-left: auto;
         }
 
-        @media (max-width: 640px) {
-          max-width: calc(100% - 20px);
-          padding: 20px 10px;
+        @media (min-width: 640px) {
+          padding: 30px 15px;
+          max-width: calc(50% - 30px);
 
-          &:nth-of-type(even),
+          &:nth-of-type(even) {
+            margin-right: 20px;
+            margin-left: 0;
+          }
+
           &:nth-of-type(odd) {
-            margin-right: auto;
-            margin-left: auto;
+            margin-right: 0;
+            margin-left: 20px;
           }
         }
 
@@ -241,12 +239,12 @@
         img {
           display: block;
           width: 100%;
-          max-width: 300px;
           margin-left: auto;
           margin-right: auto;
+          max-width: 240px;
 
-          @media (max-width: 960px) {
-            max-width: 240px;
+          @media (min-width: 960px) {
+            max-width: 300px;
           }
         }
       }

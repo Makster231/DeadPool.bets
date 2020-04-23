@@ -4,19 +4,19 @@
     flex-direction: column;
 
     p {
-      padding-right: 20px;
-      margin-bottom: 15px;
       width: 100%;
       display: block;
       text-align: left;
+      margin-bottom: 10px;
+      padding-right: 0;
 
       &:last-of-type {
         margin-bottom: 0;
       }
 
-      @media (max-width: 640px) {
-        margin-bottom: 10px;
-        padding-right: 0;
+      @media (min-width: 640px) {
+        margin-bottom: 15px;
+        padding-right: 20px;
       }
     }
   }

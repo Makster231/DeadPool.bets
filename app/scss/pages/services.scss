@@ -1,7 +1,18 @@
 .services {
   h3 {
-    font-size: 24px;
     color: $brand-white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+
+    @media (min-width: 640px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 960px) {
+      font-size: 24px;
+    }
 
     span {
       margin-left: 5px;
@@ -9,29 +20,15 @@
       color: lighten($brand-danger, 10%);
       text-decoration: underline;
     }
-
-    @media (max-width: 960px) {
-      font-size: 20px;
-    }
-
-    @media (max-width: 640px) {
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 374px) {
-      font-size: 16px;
-      text-align: left;
-      width: 100%;
-    }
   }
 
   .btn {
-    max-width: 150px;
+    max-width: 100%;
 
     margin-left: auto;
     margin-right: auto;
-    @media (max-width: 640px) {
-      max-width: 100%;
+    @media (min-width: 640px) {
+      max-width: 150px;
     }
   }
 
@@ -43,31 +40,32 @@
     box-shadow: 0 0 6px 3px rgba(139, 35, 35, 0.35);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 
     a {
       margin-right: 0 !important;
     }
 
-    @media (max-width: 640px) {
-      margin-bottom: 20px;
+    @media (min-width: 640px) {
+      margin-bottom: 0;
     }
   }
 
   &-content-block {
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
 
-    @media (max-width: 640px) {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      flex-direction: column;
-      justify-content: center;
+    @media (min-width: 640px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     &::after,

@@ -1,36 +1,36 @@
-label.error {
-  font-size: 12px;
-  color: rgba(red, 0.8);
+// label.error {
+//   font-size: 12px;
+//   color: rgba(red, 0.8);
 
-  @media (min-width: $xs) {
-    font-size: 14px;
-  }
+//   @media (min-width: $xs) {
+//     font-size: 14px;
+//   }
 
-  @media (min-width: $md) {
-    font-size: 16px;
-  }
-}
+//   @media (min-width: $md) {
+//     font-size: 16px;
+//   }
+// }
 
-.has-valid {
-  .form-control {
-    border-color: lighten(green, 10%);
-    background: rgba(green, 0.05);
-    box-shadow: inset 0 0 0 1px lighten(green, 10%);
+// .has-valid {
+//   .form-control {
+//     border-color: lighten(green, 10%);
+//     background: rgba(green, 0.05);
+//     box-shadow: inset 0 0 0 1px lighten(green, 10%);
 
-    @media (min-width: $md) {
-      box-shadow: inset 0 0 0 3px lighten(green, 10%);
-    }
-  }
-}
+//     @media (min-width: $md) {
+//       box-shadow: inset 0 0 0 3px lighten(green, 10%);
+//     }
+//   }
+// }
 
-.form-group:not(.has-error) {
-  label.error {
-    display: none !important;
-  }
-}
+// .form-group:not(.has-error) {
+//   label.error {
+//     display: none !important;
+//   }
+// }
 
-input.error:focus {
-  ~ label.error {
-    display: none !important;
-  }
-}
+// input.error:focus {
+//   ~ label.error {
+//     display: none !important;
+//   }
+// }
