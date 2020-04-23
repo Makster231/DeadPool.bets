@@ -8,10 +8,10 @@
 
     & .tooltipster-content {
       font-family: "Roboto", sans-serif !important;
-      font-size: 13px;
+      font-size: 12px;
 
-      @media (max-width: 640px) {
-        font-size: 12px;
+      @media (min-width: 640px) {
+        font-size: 13px;
       }
     }
   }

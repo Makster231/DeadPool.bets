@@ -5,9 +5,10 @@
     box-shadow: none;
     background-color: transparent;
     overflow: unset;
+    width: 100%;
 
-    @media (max-width: 640px) {
-      width: 100%;
+    @media (min-width: 640px) {
+      width: auto;
     }
   }
 

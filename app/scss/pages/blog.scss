@@ -1,34 +1,36 @@
 .blog {
   flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 
-  @media (max-width: 1168px) {
-    padding-bottom: 0;
+  @media (min-width: 1168px) {
+    padding-bottom: 30px;
   }
   &-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
-    @media (max-width: 1168px) {
-      flex-wrap: wrap;
-      margin-bottom: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    @media (min-width: 1168px) {
+      margin-bottom: 0;
+      flex-wrap: unset;
     }
   }
 
   &-block {
     width: 100%;
-    max-width: 31%;
     margin-bottom: 40px;
+    max-width: 100%;
 
-    @media (max-width: 1168px) {
+    @media (min-width: 640px) {
       max-width: 48%;
     }
 
-    @media (max-width: 640px) {
-      max-width: 100%;
+    @media (min-width: 1168px) {
+      max-width: 31%;
     }
-
     &-header {
       display: block;
       height: 120px;
@@ -40,13 +42,13 @@
     }
 
     &-body {
-      padding: 20px 20px 60px;
       background-color: $brand-white;
       box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
       position: relative;
+      padding: 15px 15px 40px;
 
-      @media (max-width: 640px) {
-        padding: 15px 15px 40px;
+      @media (min-width: 640px) {
+        padding: 20px 20px 60px;
       }
 
       span {
@@ -72,53 +74,54 @@
       }
 
       a {
-        height: 50px;
-        line-height: 50px;
         font-size: 14px;
         padding-top: 0;
         padding-bottom: 0;
-        max-width: 170px;
         position: absolute;
-        left: calc(50% - 85px);
-        bottom: calc(0px - 25px);
+        height: 40px;
+        line-height: 40px;
+        max-width: 130px;
+        bottom: calc(0px - 20px);
+        left: calc(50% - 65px);
 
         span {
           padding-top: 0;
           padding-bottom: 0;
         }
 
-        @media (max-width: 1168px) {
-          height: 40px;
-          line-height: 40px;
-          max-width: 130px;
-          bottom: calc(0px - 20px);
-          left: calc(50% - 65px);
+        @media (min-width: 1168px) {
+          left: calc(50% - 85px);
+          bottom: calc(0px - 25px);
+          max-width: 170px;
+          height: 50px;
+          line-height: 50px;
         }
       }
     }
 
     &.blog-block-row {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
 
-      @media (max-width: 640px) {
-        flex-direction: column;
+      @media (min-width: 640px) {
+        flex-direction: row;
       }
 
       .blog-block-header {
-        height: 100%;
-        width: 50%;
+        width: 100%;
+        height: 120px;
 
-        @media (max-width: 640px) {
-          width: 100%;
-          height: 120px;
+        @media (min-width: 640px) {
+          height: 100%;
+          width: 50%;
         }
       }
 
       .blog-block-body {
-        width: 50%;
-        @media (max-width: 640px) {
-          width: 100%;
+        width: 100%;
+
+        @media (min-width: 640px) {
+          width: 50%;
         }
       }
     }

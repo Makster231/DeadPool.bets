@@ -15,15 +15,16 @@
   &-logo {
     width: 100%;
     display: block;
-    max-width: 150px;
     padding-top: 15px;
     position: relative;
     padding-bottom: 15px;
     z-index: 10;
+    max-width: 120px;
+    margin-right: 10px;
 
-    @media (max-width: 960px) {
-      max-width: 120px;
-      margin-right: 10px;
+    @media (min-width: 960px) {
+      max-width: 150px;
+      margin-right: 0;
     }
 
     &-media {
@@ -39,13 +40,14 @@
       justify-content: center;
       cursor: pointer;
       align-items: center;
+      transform: scale(0.6) translate(-35%, -31%);
 
-      @media (max-width: 960px) {
+      @media (min-width: 640px) {
         transform: scale(0.8) translate(-15%, -10%);
       }
 
-      @media (max-width: 640px) {
-        transform: scale(0.6) translate(-35%, -31%);
+      @media (min-width: 960px) {
+        transform: unset;
       }
 
       i {
@@ -63,14 +65,15 @@
   }
 
   &-nav {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    display: none;
 
-    @media (max-width: 767px) {
-      display: none;
+    @media (min-width: 767px) {
+      padding-right: 14px;
+      display: flex;
     }
 
     &-item {
@@ -94,15 +97,15 @@
 
       p {
         display: block;
-        padding: 15px;
+        font-size: 14px;
         color: $brand-default;
-        font-size: 16px;
         font-weight: 400;
+        padding: 15px 5px;
 
-        @media (max-width: 960px) {
-          padding-left: 5px;
-          padding-right: 5px;
-          font-size: 14px;
+        @media (min-width: 960px) {
+          font-size: 16px;
+          padding-left: 15px;
+          padding-right: 15px;
         }
       }
 
@@ -117,14 +120,14 @@
       &.js_active,
       &:active {
         transition: 0s;
-        background-color: darken($brand-black, 10%);
+        background-color: $brand-black;
 
         &::after {
           bottom: 0;
         }
 
-        @media (max-width: 767px) {
-          background-color: $brand-black;
+        @media (min-width: 767px) {
+          background-color: darken($brand-black, 10%);
         }
       }
     }
@@ -132,24 +135,23 @@
 
   &-nav-mobile,
   &-cabinet {
-    position: relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    max-width: 200px;
-    display: block;
-    text-align: center;
-    background-color: $brand-danger;
-    cursor: pointer;
-    transition: 0.4s ease;
-    z-index: 10;
+    display: none;
 
-    @media (max-width: 960px) {
+    @media (min-width: 767px) {
       max-width: 160px;
+      position: relative;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 100%;
+      display: block;
+      text-align: center;
+      background-color: $brand-danger;
+      cursor: pointer;
+      transition: 0.4s ease;
+      z-index: 10;
     }
-
-    @media (max-width: 767px) {
-      display: none;
+    @media (min-width: 960px) {
+      max-width: 200px;
     }
 
     & > li {
@@ -158,14 +160,14 @@
     }
 
     i {
-      margin-left: 5px;
-      &::before{
+      margin-left: 0;
+      &::before {
         content: "\f02c";
-        font-family: 'fontello';
+        font-family: "fontello";
       }
 
-      @media (max-width: 960px) {
-        margin-left: 0;
+      @media (min-width: 960px) {
+        margin-left: 5px;
       }
     }
 
@@ -215,11 +217,11 @@
     li,
     a {
       color: $brand-white;
-      font-size: 16px;
       font-weight: 600;
+      font-size: 14px;
 
-      @media (max-width: 960px) {
-        font-size: 14px;
+      @media (min-width: 960px) {
+        font-size: 16px;
       }
     }
 

@@ -2,10 +2,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
-  @media (max-width: 960px) {
-    overflow: hidden;
-  }
   > * {
     width: 100%;
   }
